@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask1", "TestTask1\TestTask1.csproj", "{5594CE61-966B-4B74-A624-11A647DF8DE2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ShapesLibrary1", "ShapesLibrary1\ShapesLibrary1.shproj", "{4E3FE269-5C76-4CE9-99DA-838C96C3F22D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{14603C99-E34A-464B-87EC-2B8D57159771}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5594CE61-966B-4B74-A624-11A647DF8DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5594CE61-966B-4B74-A624-11A647DF8DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5594CE61-966B-4B74-A624-11A647DF8DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5594CE61-966B-4B74-A624-11A647DF8DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {882E84DF-4DEA-44D1-B919-E066603F9014}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ShapesLibrary1\ShapesLibrary1.projitems*{4e3fe269-5c76-4ce9-99da-838c96c3f22d}*SharedItemsImports = 13
+		ShapesLibrary1\ShapesLibrary1.projitems*{5594ce61-966b-4b74-a624-11a647df8de2}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
