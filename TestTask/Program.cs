@@ -1,14 +1,14 @@
 ﻿namespace program
 {
-    using newReadFile;
+    using ShapeFactory;
     using ShapesLibrary.Models;
-    using ShapesLibrary.FigureFactory;
+    using ShapesLibrary.IShape;
     class Program
     {
         static void Main()
         {
 
-            FigureFactory[] Figures = Shape.CreateObj("salfetka5.txt");
+            IShape[] Figures = Shape.CreateObj("salfetka5.txt");
             int len = Figures.Length;
             for (int i = 0; i < len; i++)
             {

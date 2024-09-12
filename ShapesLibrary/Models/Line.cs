@@ -1,12 +1,13 @@
 namespace ShapesLibrary.Models
 {
-    using ShapesLibrary.FigureFactory;
-    public class Line : FigureFactory
+    using ShapesLibrary.IShape;
+    public class Line : IShape
     {
         private static double x1;
         private static double y1;
         private static double x2;
         private static double y2;
+
         public Line(string line)
         {
             string[] words = line.Split(' ');

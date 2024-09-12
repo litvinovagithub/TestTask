@@ -1,8 +1,8 @@
 namespace ShapesLibrary.Models
 {
-    using ShapesLibrary.FigureFactory;
+    using ShapesLibrary.IShape;
 
-    public class Point : FigureFactory
+    public class Point : IShape
     {
         private static double x;
         private static double y;
@@ -12,15 +12,17 @@ namespace ShapesLibrary.Models
             x = Convert.ToDouble(words[1]);
             y = Convert.ToDouble(words[2]);
         }
+
         public void Draw()
         {
-
             Console.WriteLine($"point at ({x},{y})");
         }
+
         public void Area()
         {
             Console.WriteLine("point's square=0");
         }
+
         public void Perimetr()
         {
             Console.WriteLine("point's perimetr=0");

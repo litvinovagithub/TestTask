@@ -6,16 +6,16 @@
     <SharedGUID>4e3fe269-5c76-4ce9-99da-838c96c3f22d</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>ShapesLibrary1</Import_RootNamespace>
+    <Import_RootNamespace>ShapesLibrary</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)FigureFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IShape.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Circle.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Line.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Point.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Rectangular.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Rhomb.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Square.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)NewReadFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShapeFactory.cs" />
   </ItemGroup>
 </Project>

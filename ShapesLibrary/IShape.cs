@@ -1,9 +1,9 @@
-namespace ShapesLibrary.FigureFactory
-{
+namespace ShapesLibrary.IShape
+{ 
     using System;
     using System.Data;
     using System.Net;
-    public interface FigureFactory
+    public interface IShape
     {
         public void Draw();
         public void Area();

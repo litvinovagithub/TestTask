@@ -1,11 +1,12 @@
 namespace ShapesLibrary.Models
 {
-    using ShapesLibrary.FigureFactory;
-    public class Circle : FigureFactory
+    using ShapesLibrary.IShape;
+    public class Circle : IShape        
     {
         private static double xCentr;
         private static double yCentr;
         private static double radius;
+
         public Circle(string line)
         {
             string[] words = line.Split(' ');
@@ -20,11 +21,13 @@ namespace ShapesLibrary.Models
             Console.WriteLine($"Circle at ({xCentr},{yCentr}), radius is {radius}");
 
         }
+
         public void Area()
         {
             double Sq = Math.PI * radius * radius;
             Console.WriteLine($"Circle`s square= {string.Format("{0:0.00}", Sq)}");
         }
+
         public void Perimetr()
         {
             double Per = Math.PI * radius * 2;

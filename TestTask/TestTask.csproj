@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <Import Project="..\ShapesLibrary1\ShapesLibrary1.projitems" Label="Shared" />
+  <Import Project="..\ShapesLibrary\ShapesLibrary.projitems" Label="Shared" />
 
   <ItemGroup>
     <None Update="salfetka5.txt">

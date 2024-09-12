@@ -1,18 +1,16 @@
-namespace newReadFile
+namespace ShapeFactory
 {
     using System;
-    using ShapesLibrary.FigureFactory;
+    using ShapesLibrary.IShape;
     using ShapesLibrary.Models;
-    using System.Data;
-    using System.Net;
-    using System.Xml.Linq;
+   
     public class Shape
     {
-        public static FigureFactory[] CreateObj(string filePath)
+        public static IShape[] CreateObj(string filePath)
         {
             string[] lines = File.ReadAllLines(filePath);
             int length = lines.Length;
-            FigureFactory[] obj = new FigureFactory[length];
+            IShape[] obj = new IShape[length];
             for (int i = 0; i < length; ++i)
             {
                 string line = lines[i];
